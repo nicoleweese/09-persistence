@@ -6,11 +6,11 @@ To retreive (or GET) a doggo, use the following route:
 ```
 localhost:3000/api/doggo?id=${doggo.id}
 ```
-If a valid ```${doggo.id}``` is provided, the server will respond with a status of 200, or a valid doggo was found.
+If a valid ```${doggo.id}``` is provided, the server will respond with a status of **200**, or a valid doggo was found.
 
 Note: 
-  - If no ```${doggo.id}``` is provided, the server will respond with a 400, or 'bad request'.
-  - If an incorrect ```${doggo.id}``` is provided, the server will respond with a 404, or 'not found'.
+  - If no ```${doggo.id}``` is provided, the server will respond with a **400**, or 'bad request'.
+  - If an incorrect ```${doggo.id}``` is provided, the server will respond with a **404**, or 'not found'.
 
 To add (PUT or POST) a doggo, use the following route:
 ```
@@ -20,10 +20,10 @@ The doggo constructor accepts doggos in the form of:
 
 ``` { name: name, breed: breed, favActivity: favActivity } ```
 
-If a valid doggo is added to the storage, the server will respond with a status of 200.
+If a valid doggo is added to the storage, the server will respond with a status of **200**.
 
 Note:
-  - If an invalid request is made, the server will respond with a status of 400, or 'bad request'.
+  - If an invalid request is made, the server will respond with a status of **400**, or 'bad request'.
 
 To adopt (or DELETE) a doggo, use the following route:
 ```
