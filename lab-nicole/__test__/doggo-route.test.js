@@ -14,7 +14,6 @@ describe('Doggo Routes', function() {
         .end((err, res) => {
           if(err) return done(err);
           doggo = JSON.parse(res.text);
-          console.log('doggo', doggo);
           expect(res.status).toEqual(200);
           expect(doggo.name).toEqual('Chloe');
           expect(doggo.breed).toEqual('Pitbull/Australian Shepherd');
@@ -40,7 +39,6 @@ describe('Doggo Routes', function() {
           if (err) return done(err);
           expect(res.status).toEqual(200);
           let response = JSON.parse(res.text);
-          console.log('response.name', response.name);
           expect(response.name).toEqual('Chloe');
           expect(response.breed).toEqual('Pitbull/Australian Shepherd');
           expect(response.favActivity).toEqual('fetch');
