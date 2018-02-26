@@ -29,7 +29,6 @@ module.exports = function(router) {
   router.post('/api/doggo', function(req, res) {
     try {
       var doggo = new Doggo(req.body.name, req.body.breed, req.body.favActivity);
-      console.log('doggo request', doggo);
       storage.addDoggo('doggo', doggo);
       response.sendJSON(res, 200, doggo);
     } catch (err) {

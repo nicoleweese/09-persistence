@@ -29,4 +29,4 @@ To adopt (or DELETE) a doggo, use the following route:
 ```
 localhost:3000/api/doggo?id=${doggo.id}
 ```
-With ```${doggo.id}``` being the ID of the doggo you would like to delete.
+With ```${doggo.id}``` being the ID of the doggo you would like to adopt (delete).
